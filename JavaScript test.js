@@ -49,3 +49,15 @@ function randomRestaurant(numOfRestaurants){
         
         const randomRestaurantList= randomRestaurant(3);
         console.log(randomRestaurantList);
+
+
+// leap year
+
+ 
+function isLeapYear(year){    
+return (year % 100 === 0) ? (vear % 400 === 0) : (year % 4 === 0);
+};
+
+
+
+    console.log(isLeapYear(2016));
