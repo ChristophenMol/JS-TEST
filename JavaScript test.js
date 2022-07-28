@@ -25,9 +25,9 @@ function itemPrice(item) {
         default: 
         return "Please select an available item";
     }
-if(typeof item !== "string") {
+  }
+    if(typeof item !== "string") {
         console.log("All entries must be of type string");
-    }
 }
     
     console.log(itemPrice("case"));
