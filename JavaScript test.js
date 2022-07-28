@@ -31,3 +31,21 @@ if(typeof item !== "string") {
 }
     
     console.log(itemPrice("case"));
+
+// whats for dinner
+
+
+function randomRestaurant(numOfRestaurants){
+        const restaurants = ["Applebees", "Panera Bread", "Popeyes", "Chopt", "Chick-fil-A", "Cheesecake Factory", "Five Guys"];
+
+        const randomRestaurantList = [];
+
+    for (var i = 0; i < numOfRestaurants; i++) {
+        const randomIndex = Math.floor(Math.random() * restaurants.length + 1);
+        randomRestaurantList.push(restaurants[randomIndex - 1]);
+        }
+        return randomRestaurantList;
+    }
+        
+        const randomRestaurantList= randomRestaurant(3);
+        console.log(randomRestaurantList);
